@@ -1,0 +1,120 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: block;
+    width: min-content;
+    background-color: #BFBFBF;
+    border: 5px solid #7A7A7A;
+    padding: 5px;
+}
+
+    p {
+        font-size: 20px;
+        line-height: 25px;
+        font-family: Verdana;
+        text-align: center;
+        padding: 5px 0;
+        font-weight: 600;
+    }
+
+    .level {
+        font-size: 13px;
+        line-height: 20px;
+        font-family: sans-serif;
+    }
+
+        .level:hover {
+            color: rgb(0, 68, 255);
+            cursor: pointer;
+        }
+
+    .board > .header {
+        display: inline-block;;
+        width: 100%;
+        padding: 10px;
+        border-top: 	2px solid #707070;
+        border-left: 	2px solid #707070;
+        border-right: 	2px solid white;
+        border-bottom: 	2px solid white;
+    }
+        .board > .header > * {
+            display: inline-block;
+            float: left;
+            text-align: center;
+            
+        }
+        .board > .header > .counter {
+            background: black;
+            color: red;
+            font-size: 36px;
+            line-height: 40px;
+            width: 65px;
+            border-top: 	2px solid #707070;
+            border-left: 	2px solid #707070;
+            border-right: 	2px solid white;
+            border-bottom: 	2px solid white;
+        }
+        .board > .header > .status {
+            width: 40px;
+            height: 40px;
+            margin: 0 calc(50% - 85px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .board > .header > .status > .status-box {
+                width: 27px;
+                height: 27px;
+                background-color: #8b8b8b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: yellow;
+                border-top: 	2px solid white;
+                border-left: 	2px solid white;
+                border-right: 	2px solid #707070;
+                border-bottom: 	2px solid #707070;
+                cursor: pointer;
+            }
+    .board > .content {
+        display: inline-block;;
+        width: 100%;
+    }
+        .board > .content > .cell {
+            display: inline-block;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: #bdbdbd;
+            border: 1px solid white;
+        }
+
+            .board > .content > .cell.hidden {
+                border-top: 	2px solid white;
+                border-left: 	2px solid white;
+                border-right: 	2px solid #707070;
+                border-bottom: 	2px solid #707070;
+            }
+            
+            .board > .content > .cell.red {
+                background-color: red;
+            }
+            
