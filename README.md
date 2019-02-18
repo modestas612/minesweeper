@@ -1,3 +1,3 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/modestas612/minesweeper/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can use the MineSweeper game [here](https://modestas612.github.io/minesweeper/).
